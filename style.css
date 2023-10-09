@@ -1,0 +1,104 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  color: black;
+  font-style: italic;
+}
+.navigationbar {
+  font-style: oblique;
+  text-align: center;
+}
+
+.wholethang {
+  align-items: center;
+  border: 5px solid;
+  width: 98%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.cvthang {
+  border: 5px solid;
+  width: 98%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.cvinfo {
+  color: #324A5F;
+}
+
+.bioinfo {
+  color: #324A5F;
+  font-size: 20px;
+}
+
+.homebutton {
+  color: white;
+  background-color: #1B2A41;
+}
+
+.cvbutton {
+  color: white;
+  background-color: #1B2A41;
+}
+
+.degreeinfo {
+  color: #324A5F;
+}
+
+.degreeinfopt2 {
+  color: #324A5F;
+}
+
+.skillinfo {
+  color: #324A5F;
+}
+
+.researchinfo {
+  color: #324A5F;
+}
+
+.navigationbarpt2 {
+  font-style: oblique;
+}
+
+.homebuttonpt2 {
+  color: white;
+  background-color: #1B2A41;
+}
+
+.cvbuttonpt2 {
+  color: white;
+  background-color: #1B2A41;
+}
+
+.pdfresumebutton {
+  color: white;
+  background-color: #1B2A41;
+  margin-top: 10px;
+}
+
+.picandbio {
+  width: 65%;
+  text-align:center;
+}
+
+.testclass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.classestakenMCC {
+  color: #324A5F;
+}
+
+.classestakenUMKC {
+  color: #324A5F;
+}
