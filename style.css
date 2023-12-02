@@ -48,6 +48,21 @@ html {
   background-color: #1B2A41;
 }
 
+.projectsbutton {
+  color: white;
+  background-color: #1B2A41;
+}
+
+.researchbutton {
+  color: white;
+  background-color: #1B2A41;
+}
+
+.workexperiencebutton {
+  color: white;
+  background-color: #1B2A41;
+}
+
 .degreeinfo {
   color: #324A5F;
 }
@@ -101,4 +116,121 @@ html {
 
 .classestakenUMKC {
   color: #324A5F;
+}
+
+.allProjects {
+  display:flex;
+}
+
+.SOSBox {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  background: #060c21;
+  transition: 0.5s;
+}
+.SOSBox:hover {
+  height: 400px;
+}
+
+.SOSBox .SOSImgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.SOSBox .SOSImgBox img {
+  max-width: 100%;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.SOSBox:hover .SOSImgBox img {
+  opacity: 1;
+}
+
+.SOSBox:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.SOSBox:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.SOSBox:before, .SOSBox:after {
+  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+
+.SOSBox:nth-child(2):before, .SOSBox:nth-child(2):after {
+  background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+
+.SOSBox:nth-child(3):before, .SOSBox:nth-child(3):after {
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
+.SOSBox:nth-child(4):before, .SOSBox:nth-child(4):after {
+  background: linear-gradient(235deg, blue, black, teal);
+}
+
+.SOSBox:nth-child(5):before, .SOSBox:nth-child(5):after {
+  background: linear-gradient(235deg, purple, black, pink);
+}
+
+.SOSBox .content{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 90px;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.SOSBox:hover .content{
+  opacity: 1;
+}
+
+.SOSBox .content h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.SOSBox .content h2 span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+
 }
