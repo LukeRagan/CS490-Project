@@ -63,6 +63,11 @@ html {
   background-color: #1B2A41;
 }
 
+.skillbutton {
+  color: white;
+  background-color: #1B2A41;
+}
+
 .degreeinfo {
   color: #324A5F;
 }
@@ -121,11 +126,16 @@ html {
 .allProjects {
   display:flex;
 }
+.allSkills {
+  display:flex;
+  flex-wrap: wrap;  /* Allow items to wrap onto multiple lines */
+  justify-content: space-around; /* Optional: Adjust the spacing between items */
+}
 
 .SOSBox {
   position: relative;
   width: 300px;
-  height: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +144,7 @@ html {
   transition: 0.5s;
 }
 .SOSBox:hover {
-  height: 400px;
+  height: 450px;
 }
 
 .SOSBox .SOSImgBox {
@@ -205,7 +215,7 @@ html {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  height: 90px;
+  height: 300px;
   background: rgba(0,0,0,0.4);
   display: flex;
   justify-content: center;
@@ -228,6 +238,320 @@ html {
 }
 
 .SOSBox .content h2 span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+
+}
+
+.ResearchBox {
+  position: relative;
+  width: 96%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  background: #060c21;
+  transition: 0.5s;
+}
+
+.ResearchBox .ResearchBoxContent{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 90px;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+}
+
+.ResearchBox:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.ResearchBox:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.ResearchBox:before, .ResearchBox:after {
+  background: linear-gradient(235deg, skyblue, #010615, yellow);
+}
+
+.ResearchBox .ResearchBoxContent h1 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.ResearchBox .ResearchBoxContent h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.ResearchBox .ResearchBoxContent p {
+  font-size: 14px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.ResearchSummary {
+  margin: 30px;
+  display:flex;
+}
+
+.CVBox {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background: black;
+  transition: 0.5s;
+}
+
+
+.CvBox:hover {
+  height: 600px;
+}
+
+.CVBox .CVImgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.CVBox .CVImgBox img {
+  max-width: 100%;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.CVBox:hover .CVImgBox img {
+  opacity: 1;
+}
+
+.CVBox:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.CVBox:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.CVBox:before, .CVBox:after {
+  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+
+.CVBox:nth-child(2):before, .CVBox:nth-child(2):after {
+  background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+
+.CVBox:nth-child(3):before, .CVBox:nth-child(3):after {
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
+.CVBox:nth-child(4):before, .CVBox:nth-child(4):after {
+  background: linear-gradient(235deg, blue, black, teal);
+}
+
+.CVBox:nth-child(5):before, .CVBox:nth-child(5):after {
+  background: linear-gradient(235deg, purple, black, pink);
+}
+
+.CVBox .content{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 395px;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.CVBox:hover .content{
+  opacity: 1;
+}
+
+.CVBox .content h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.CVBox .content h2 span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+
+}
+
+.SkillBox {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background: black;
+  transition: 0.5s;
+}
+
+
+.SkillBox:hover {
+  height: 600px;
+}
+
+.SkillBox .SkillImgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.SkillBox .SkillImgBox img {
+  max-width: 100%;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.SkillBox:hover .SkillImgBox img {
+  opacity: 1;
+}
+
+.SkillBox:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.SkillBox:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.SkillBox:before, .SkillBox:after {
+  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+
+.SkillBox:nth-child(2):before, .SkillBox:nth-child(2):after {
+  background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+
+.SkillBox:nth-child(3):before, .SkillBox:nth-child(3):after {
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
+.SkillBox:nth-child(4):before, .SkillBox:nth-child(4):after {
+  background: linear-gradient(235deg, blue, black, teal);
+}
+
+.SkillBox:nth-child(5):before, .SkillBox:nth-child(5):after {
+  background: linear-gradient(235deg, purple, black, pink);
+}
+
+.SkillBox .content{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 250px;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.SkillBox:hover .content{
+  opacity: 1;
+}
+
+.SkillBox .content h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.SkillBox .content h2 span {
   font-size: 14px;
   color: #fff;
   font-weight: 200;
